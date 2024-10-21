@@ -23,9 +23,7 @@ module "dev_vm" {
   vnet_name                = "MN-VNET-TeamVii"  # Modificado
 }
 
-
-
-# testing the actions
+# Fixing db username and password
 /*
 module "dev_vm" {
   source                   = "../../modules/vm"
