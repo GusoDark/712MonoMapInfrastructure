@@ -29,6 +29,7 @@ module "dev_vm" {
 //Jared Noe Landeros Castellanos 
 //Luis Benjamín Horta López
 // Francisco Javier Gutierrez Medrano
+//Gustavo Romero Oláez - 74749
 # Doing corrections in Docker images
 /*
 module "dev_vm" {
