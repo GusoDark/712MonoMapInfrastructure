@@ -1,0 +1,3 @@
+az group create --name tfstateRGGustavo --location eastus2
+
+az storage account create --resource-group tfstateRGGustavo --name tfstategustavo --sku Standard_LRS --encryption-services
