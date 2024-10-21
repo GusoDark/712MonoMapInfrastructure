@@ -27,6 +27,7 @@ module "dev_vm" {
 // Luis Arturo Cerecedo Enriquez
 // Mauricio Javier Carapia Barcena
 //Jared Noe Landeros Castellanos 
+// Francisco Javier Gutierrez Medrano
 # Doing corrections in Docker images
 /*
 module "dev_vm" {
