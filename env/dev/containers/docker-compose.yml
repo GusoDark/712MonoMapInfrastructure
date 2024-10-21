@@ -17,7 +17,7 @@ services:
 
   lets-encrypt:
     image: jrcs/letsencrypts-nginx-proxy-companion
-    container-name: 'Lets-Encrypt'
+    container_name: 'Lets-Encrypt'
     restart: always
     environment:
       - NGINX_PROXY_CONTAINER=Reverse-Proxy
@@ -27,29 +27,29 @@ services:
       - /volumes/nginx/html:/usr/share/nginx/html:rw
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
-    mono-map-api:
-      image: gustavr12/mono-map-api:latest
-      container-name: mono-map-api
-      expose:
-        - "3001"
-      depends_on:
-        - mongo
-      environment:
-        - MONGO_URL=${MONGO_URL}
-        - PORT=${PORT}
-        - MONGO_DB=${MONGO_DB}
-        - MAIL_SECRET_KEY=${MAIN_SECRET_KEY}
-        - MAIL_SERVICE=${MAIL_SERVICE}
-        - MAIL_USER=${MAIL:USER}
-        - MAPBOX_ACCESS_TOKEN=${MAPBOX_ACCESS_TOKEN}
-        - VIRTUAL_HOST=${DOMAIN}
-        - VIRTUAL_PATH=/
-        - LETSENCRYPTS_HOST=${DOMAIN}
-        - LETSENCRYPTS_EMAIL=${MAILL_USER}
+  mono-map-api:
+    image: gustavr12/mono_map_api:latest
+    container_name: mono-map-api
+    expose:
+      - "3001"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URL=${MONGO_URL}
+      - PORT=${PORT}
+      - MONGO_DB=${MONGO_DB}
+      - MAIL_SECRET_KEY=${MAIL_SECRET_KEY}
+      - MAIL_SERVICE=${MAIL_SERVICE}
+      - MAIL_USER=${MAIL_USER}
+      - MAPBOX_ACCESS_TOKEN=${MAPBOX_ACCESS_TOKEN}
+      - VIRTUAL_HOST=${DOMAIN}
+      - VIRTUAL_PATH=/
+      - LETSENCRYPT_HOST=${DOMAIN}
+      - LETSENCRYPT_EMAIL=${MAIL_USER}
 
   mongo:
     image: mongo:latest
-    container_name:mongo
+    container_name: mongo
     environment:
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_INIT_ROOT_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INIT_ROOT_PASSWORD}

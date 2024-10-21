@@ -1,0 +1,59 @@
+Listado de rutas de carpetas para el volumen OS
+El número de serie del volumen es 7AD6-6DF7
+C:.
+¦   .gitignore
+¦   estructura.txt
+¦   storage.azcli
+¦   
++---.github
+¦   +---workflows
+¦           deploy-dev.yml
+¦           destroy-dev.yml
+¦           
++---env
+¦   +---dev
+¦       ¦   .terraform.lock.hcl
+¦       ¦   main.tf
+¦       ¦   providers.tf
+¦       ¦   terraform.tfvars
+¦       ¦   variables.tf
+¦       ¦   
+¦       +---.terraform
+¦       ¦   ¦   terraform.tfstate
+¦       ¦   ¦   
+¦       ¦   +---modules
+¦       ¦   ¦       modules.json
+¦       ¦   ¦       
+¦       ¦   +---providers
+¦       ¦       +---registry.terraform.io
+¦       ¦           +---hashicorp
+¦       ¦               +---azurerm
+¦       ¦               ¦   +---3.0.0
+¦       ¦               ¦       +---windows_amd64
+¦       ¦               +---null
+¦       ¦               ¦   +---3.2.3
+¦       ¦               ¦       +---windows_amd64
+¦       ¦               ¦               LICENSE.txt
+¦       ¦               ¦               
+¦       ¦               +---time
+¦       ¦                   +---0.12.1
+¦       ¦                       +---windows_amd64
+¦       ¦                               LICENSE.txt
+¦       ¦                               
+¦       +---containers
+¦       ¦       docker-compose.yml
+¦       ¦       
+¦       +---keys
+¦               712monomap_server
+¦               712monomap_server.pub
+¦               
++---modules
+    +---vm
+        ¦   main.tf
+        ¦   output.tf
+        ¦   providers.tf
+        ¦   variables.tf
+        ¦   
+        +---scripts
+                docker-install.tpl
+                
