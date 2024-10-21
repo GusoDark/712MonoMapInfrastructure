@@ -23,6 +23,7 @@ module "dev_vm" {
   vnet_name                = "MN-VNET-TeamVii"  # Modificado
 }
 
+// Edgar Rodrigo Martínez Arroyo
 # Doing corrections in Docker images
 /*
 module "dev_vm" {
