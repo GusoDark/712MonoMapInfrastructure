@@ -22,6 +22,7 @@ module "dev_vm" {
   ip_name                  = "MN_IP_TeamVii"  # Modificado
   vnet_name                = "MN_VNET_TeamVii"  # Modificado
 }
+
 /*
 module "dev_vm" {
   source                   = "../../modules/vm"
