@@ -23,7 +23,9 @@ module "dev_vm" {
   vnet_name                = "MN-VNET-TeamVii"  # Modificado
 }
 
-# testing again
+
+
+# testing the actions
 /*
 module "dev_vm" {
   source                   = "../../modules/vm"
