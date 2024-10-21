@@ -16,7 +16,7 @@ services:
       - /var/run/docker.sock:/tmp/docker.sock:ro
 
   lets-encrypt:
-    image: jrcs/letsencrypts-nginx-proxy-companion
+    image: jrcs/letsencrypt-nginx-proxy-companion
     container_name: 'Lets-Encrypt'
     restart: always
     environment:

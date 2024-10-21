@@ -23,7 +23,7 @@ module "dev_vm" {
   vnet_name                = "MN-VNET-TeamVii"  # Modificado
 }
 
-# Fixing db username and password
+# Doing corrections in Docker images
 /*
 module "dev_vm" {
   source                   = "../../modules/vm"
